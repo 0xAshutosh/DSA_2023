@@ -11,7 +11,5 @@ int main() {
         cout << endl;
     }
 
-    for (; row < n; row++) {
-        for (int col = 0; col < n - row; col++) 
-    }
+    return 0;
 }
