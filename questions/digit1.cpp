@@ -2,19 +2,19 @@
 using namespace std;
 
 int main() {
-    int ans = 0;
-    int num;
-    cout << "Enter the length of number : ";
-    cin >> num;
+    int n, ans = 0;
+    cin >> n;
 
     int i = 1;
-    while (i <= num) {
-        int n;
-        cin >> n;
+    while (i <= n) {
+        int num;
+        cin >> num;
 
-        ans = ans * 10 + n;
+        ans = ans * 10 + num;
         i++;
     }
 
     cout << ans << endl;
+
+    return 0;
 }

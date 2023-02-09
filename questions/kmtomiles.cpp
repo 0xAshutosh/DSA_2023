@@ -1,16 +1,15 @@
 #include <iostream>
 using namespace std;
 
+inline double KMtoMiles(int km) {
+    return km / 1.609;
+}
+
 int main() {
     int n;
     cin >> n;
 
-    while (n != 0) {
-        cout << n % 10 << " ";
-        n /= 10;
-    }
-
-    cout << endl;
+    cout << KMtoMiles(n) << endl;
 
     return 0;
 }
