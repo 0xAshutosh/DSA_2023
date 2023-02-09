@@ -1,15 +1,16 @@
 #include <iostream>
-#define PI 3.14 
+#define PI 3.14
 using namespace std;
 
-int area(int radius) {
-    return PI * radius * radius;
+inline int area(int r) {
+    return PI * r * r;
 }
 
 int main() {
-    int r;
-    cin >> r;
-    cout << area(r) << endl;
+    int radius;
+    cin >> radius;
+
+    cout << area(radius) << endl;
 
     return 0;
 }
