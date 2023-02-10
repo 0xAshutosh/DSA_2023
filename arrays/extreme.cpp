@@ -12,6 +12,7 @@ int main() {
         else {
             cout << arr[i] << " ";
             cout << arr[j] << " ";
+            // some comment;
         }
 
         i++;
