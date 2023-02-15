@@ -87,21 +87,48 @@ int main() {
     //     cout << endl; 
     // }
 
-    for (int row = 0; row < n; row++) {
-        // print spaces;
-        for (int space = 0; space < n - row - 1; space++) cout << ' ';
-        // print stars;
-        for (int col = 0; col < row + 1; col++) cout << "* ";
-        cout << endl;
-    }
+    // for (int row = 0; row < n; row++) {
+    //     // print spaces;
+    //     for (int space = 0; space < n - row - 1; space++) cout << ' ';
+    //     // print stars;
+    //     for (int col = 0; col < row + 1; col++) cout << "* ";
+    //     cout << endl;
+    // }
 
-    for (int row = 0; row < n; row++) {
-        // print spaces;
-        for (int space = 0; space < row; space++) cout << ' ';
-        // print stars;
-        for (int col = 0; col < n - row; col++) cout << "* "; 
-        cout << endl;  
-    }
+    // for (int row = 0; row < n; row++) {
+    //     // print spaces;
+    //     for (int space = 0; space < row; space++) cout << ' ';
+    //     // print stars;
+    //     for (int col = 0; col < n - row; col++) cout << "* "; 
+    //     cout << endl;  
+    // }
+
+    // hollow diamond 
+
+    // for (int row = 0; row < n; row++) {
+    //     // printing spaces;
+    //     for (int space = 0; space < n - row - 1; space++) cout << ' ';
+    //     // printing stars;
+    //     for (int col = 0; col < 2 * row + 1; col++) {
+    //         if (col == 0 || col == 2 * row) cout << '*';
+    //         else cout << ' ';
+    //     }
+    //     cout << endl; 
+    // }
+
+    // for (int row = 0; row < n; row++) {
+    //     // printing spaces;
+    //     for (int space = 0; space < row; space++) cout << ' '; 
+    //     // printing stars;
+    //     for (int col = 0; col < 2 * (n - row) - 1; col++) {
+    //         if (col == 0 || col == 2 * (n - row) - 2) cout << '*';
+    //         else cout << ' ';
+    //     }
+
+    //     cout << endl; 
+    // }
+
+    // flipped solid diamond
 
    
     return 0;
