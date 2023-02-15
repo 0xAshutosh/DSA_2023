@@ -273,7 +273,7 @@ int main() {
     // pascal triangle 
     for (int row = 0; row < n; row++) {
         // print spaces;
-        for (int space = 0; space < n - row - 1; space++) cout << ' '; 
+        for (int space = 0; space < n - row - 1; space++) cout << ' ';     
         // print pascal triangle;
         for (int col = 0; col < row + 1; col++) cout << ncr(row, col) << ' '; 
         cout << endl; 
