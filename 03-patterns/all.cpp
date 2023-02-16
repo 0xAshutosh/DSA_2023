@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
-int fact(int n) {
-    if (n == 0 || n == 1) return 1;
-    int num = 1;
-    for (int i = 2; i <= n; i++) num *= i; 
+// int fact(int n) {
+//     if (n == 0 || n == 1) return 1;
+//     int num = 1;
+//     for (int i = 2; i <= n; i++) num *= i; 
 
-    return num; 
-}
+//     return num; 
+// }
 
-int ncr(int n, int r) {
-    return fact(n) / (fact(n - r) * fact(r)); 
-}
+// int ncr(int n, int r) {
+//     return fact(n) / (fact(n - r) * fact(r)); 
+// }
 
 int main() {
     // int m, n;
@@ -271,13 +271,30 @@ int main() {
     // } 
 
     // pascal triangle 
-    for (int row = 0; row < n; row++) {
-        // print spaces;
-        for (int space = 0; space < n - row - 1; space++) cout << ' ';     
-        // print pascal triangle;
-        for (int col = 0; col < row + 1; col++) cout << ncr(row, col) << ' '; 
-        cout << endl; 
-    }
+    // for (int row = 0; row < n; row++) {
+    //     // print spaces;
+    //     for (int space = 0; space < n - row - 1; space++) cout << ' ';     
+    //     // print pascal triangle;
+    //     for (int col = 0; col < row + 1; col++) cout << ncr(row, col) << ' '; 
+    //     cout << endl; 
+    // }
+
+    // butterfly pattern; 
+    // for (int row = 0; row < n; row++) {
+    //     for (int col = 0; col < row + 1; col++) cout << '*'; 
+    //     for (int space = 0; space < 2 * (n - row) - 1; space++) cout << ' '; 
+    //     for (int col = 0; col < row + 1; col++) cout << '*'; 
+
+    //     cout << endl; 
+    // }
+
+    // for (int row = 0; row < n; row++) {
+    //     for (int col = 0; col < n - row; col++) cout << '*';
+    //     for (int space = 0; space < 2 * row + 1; space++) cout << ' '; 
+    //     for (int col = 0; col < n - row; col++) cout << '*';
+
+    //     cout << endl; 
+    // }
    
     return 0;
 }
