@@ -2,24 +2,22 @@
 using namespace std;
 
 int main() {
-    int arr[] = {10, 20, 30, 40, 50, 60, 70, 80}; 
+    int n;
+    cin >> n; 
 
-    int i = 0, j = 7;
+    int arr[100];
+    for (int i = 0; i < n; i++) cin >> arr[i]; 
 
+    // printing extreme; 
+    int i = 0, j = n - 1;
     while (i <= j) {
-
-        if (i == j) cout << arr[i] << " ";
-        else {
-            cout << arr[i] << " ";
-            cout << arr[j] << " ";
-            // some comment;
-        }
-
+        cout << arr[i] << " "; 
         i++;
-        j--;
+        cout << arr[j] << " "; 
+        j--; 
     }
 
-    cout << endl;
+    cout << endl; 
 
     return 0; 
 }
