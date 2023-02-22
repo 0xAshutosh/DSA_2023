@@ -11,7 +11,7 @@ vector<int> spiralArray(int arr[][100], int row, int col) {
             ans.push_back(arr[rowStart][i]);
             j++;
         }
-
+        // rowend--
         for (int i = rowStart; i < rowEnd; i++) {
             ans.push_back(arr[i][colEnd]);
             j++;
