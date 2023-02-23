@@ -2,13 +2,17 @@
 using namespace std;
 
 int main() {
-    int arr[] = {1, 3, 5, 7, 9};
+    int n;
+    cin >> n;
 
-    for (int i = 0; i < 5; i++) arr[i] = 1;
+    int arr[100];
 
-    for (int i = 0; i < 5; i++) cout << arr[i] << " ";
+    for (int i = 0; i < n; i++) cin >> arr[i];
 
-    cout << endl;
+    for (int i = 0; i < n; i++) arr[i] = 1; 
+
+    for (int i = 0; i < n; i++) cout << arr[i] << ' ';
+    cout << endl; 
 
     return 0; 
 }
