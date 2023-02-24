@@ -1,20 +1,29 @@
 #include <iostream>
-using namespace std;
+using namespace std; 
 
-bool linearSearch(int arr[], int size, int key) {
+int linearSearch(int arr[], int size, int key) {
     for (int i = 0; i < size; i++) {
-        if (arr[i] == key) return true;
+        if (arr[i] == key) return i; 
     }
 
-    return false;
+    return -1; 
 }
 
 int main() {
-    int arr[5] = {1, 3, 5, 7, 8};
+    int n;
+    cin >> n;
+
+    int arr[100];
+
+    for (int i = 0; i < n; i++) cin >> arr[i]; 
+
     int key;
-    cin >> key;
-    if (linearSearch(arr, 5, key)) cout << "Present" << endl;
-    else cout << "Absent" << endl;
+    cin >> key; 
+
+    int ans = linearSearch(arr, n, key); 
+
+    if (ans == -1) cout << "Key not found!" << endl; 
+    else cout << "Found at index : " << ans << endl; 
 
     return 0;
 }

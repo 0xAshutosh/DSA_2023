@@ -2,21 +2,21 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n; 
-
     int arr[100];
-    int zero = 0, one = 0; 
+    int n;
+    cin >> n;
 
     for (int i = 0; i < n; i++) cin >> arr[i];
 
+    int zeros = 0, ones = 0;
+
     for (int i = 0; i < n; i++) {
-        if (arr[i] == 0) zero++;
-        else if (arr[i] == 1) one++; 
+        if (arr[i] == 0) zeros++;
+        else if (arr[i] == 1) ones++; 
     }
 
-    cout << "Numbers of zeros in an array : " << zero << endl; 
-    cout << "Numbers of one in an array : " << one << endl; 
+    cout << "No. of zeros in an array : " << zeros << endl; 
+    cout << "No. of ones in an array : " << ones << endl; 
 
     return 0; 
 }
