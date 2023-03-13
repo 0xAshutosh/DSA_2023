@@ -1,10 +1,17 @@
-int power(int x, int n) {
-  /* Don't write main().
-     Don't read input, it is passed as function argument.
-     Return output and don't print it.
-     Taking input and printing output is handled automatically.
-  */
-    if (n == 0) return 1; 
+#include <iostream>
+using namespace std; 
 
-    return x * power(x, n - 1); 
+int pow(int x, int n) {
+  if (n == 0) return 1; 
+
+  return x * pow(x, n - 1); 
+}
+
+int main() {
+  int x, n; 
+  cin >> x >> n; 
+
+  cout << "x ^ n : " << pow(x, n) << endl; 
+
+  return 0; 
 }
